@@ -1,6 +1,6 @@
-class abc{
-    void sri()
-    {
-        print('Hello');
-    }
+class abc {
+  void sri() {
+    print('Hello');
+    print("what");
+  }
 }
