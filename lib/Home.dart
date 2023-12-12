@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
                       width: 380,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Colors.amber,
+                        color: Colors.grey,
                       ),
                       child: Row(
                         children: <Widget>[
@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
                       width: 380,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Colors.amber,
+                        color: Colors.grey,
                       ),
                       child: Row(
                         children: <Widget>[
@@ -89,7 +89,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -188,7 +188,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               ),
-              SizedBox(height: 50),
+              SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -222,8 +222,10 @@ class _HomeState extends State<Home> {
                                 ),
                               ],
                             ),
-                            Image(
-                              image: AssetImage('images/Andriod.png'),
+                            Expanded(
+                              child: Image(
+                                image: AssetImage('images/Andriod.png'),
+                              ),
                             ),
                           ]),
                     ),
@@ -287,7 +289,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               ),
-              SizedBox(height: 50),
+              SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
