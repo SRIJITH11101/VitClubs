@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vitclubs/Home.dart';
+import 'DescriptionPage.dart';
 
 void main() {
   runApp(const VitClubs());
@@ -12,7 +13,7 @@ class VitClubs extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Home(),
+        body: Description(),
       ),
     );
   }
