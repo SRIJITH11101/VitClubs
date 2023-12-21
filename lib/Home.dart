@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vitclubs/Technical1.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -94,7 +95,14 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Technical Clubs", style: TextStyle(fontSize: 22)),
-                  Text("see all >", style: TextStyle(fontSize: 18)),
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Technical()));
+                      },
+                      child: Text("see all >", style: TextStyle(fontSize: 18))),
                 ],
               ),
               SingleChildScrollView(
@@ -193,7 +201,10 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Non-Technical Clubs", style: TextStyle(fontSize: 22)),
-                  Text("see all >", style: TextStyle(fontSize: 18)),
+                  TextButton(
+                    onPressed: null,
+                    child: Text("see all >", style: TextStyle(fontSize: 18)),
+                  )
                 ],
               ),
               SingleChildScrollView(
