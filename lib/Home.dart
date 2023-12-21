@@ -93,16 +93,7 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("Technical Clubs", style: TextStyle(fontSize: 22)),
-                    Text("see all >", style: TextStyle(fontSize: 18)),
-                  ],
-                ),
-<<<<<<< HEAD
-              ),
+                
               SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -118,29 +109,8 @@ class _HomeState extends State<Home> {
                       child: Text("see all >", style: TextStyle(fontSize: 18))),
                 ],
               ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      height: 127,
-                      width: 192,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Color(0xFF4CFACF),
-                      ),
-                      child: const Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            Column(
-                              children: [
-                                Padding(
-                                  padding: EdgeInsets.only(top: 8.0, left: 5.0),
-                                  child: Text(
-                                    "Andriod \nClub",
-                                    style: TextStyle(fontSize: 26),
-=======
+              
+
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -165,64 +135,12 @@ class _HomeState extends State<Home> {
                                       "Andriod \nClub",
                                       style: TextStyle(fontSize: 26),
                                     ),
->>>>>>> e23ce14e4975a901d9028aeab4faaf329c7a3017
                                   ),
                                 ],
                               ),
-<<<<<<< HEAD
-                            ],
-                          ),
-                          Image(
-                            image: AssetImage('images/Andriod.png'),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 30),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text("Non-Technical Clubs", style: TextStyle(fontSize: 22)),
-                  TextButton(
-                    onPressed: null,
-                    child: Text("see all >", style: TextStyle(fontSize: 18)),
-                  )
-                ],
-              ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      height: 127,
-                      width: 192,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Color(0xFF4CFACF),
-                      ),
-                      child: const Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            Column(
-                              children: [
-                                Padding(
-                                  padding: EdgeInsets.only(top: 8.0, left: 5.0),
-                                  child: Text(
-                                    "Adventure \nClub",
-                                    style: TextStyle(fontSize: 26),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Expanded(
-                              child: Image(
-=======
+                          
+
                               Image(
->>>>>>> e23ce14e4975a901d9028aeab4faaf329c7a3017
                                 image: AssetImage('images/Andriod.png'),
                               ),
                             ]),
@@ -293,7 +211,9 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Non-Technical Clubs", style: TextStyle(fontSize: 22)),
-                    Text("see all >", style: TextStyle(fontSize: 18)),
+                    TextButton(
+                      onPressed: null,
+                      child: Text("see all >", style: TextStyle(fontSize: 18))),
                   ],
                 ),
                 SingleChildScrollView(
@@ -396,7 +316,9 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Regional Clubs", style: TextStyle(fontSize: 22)),
-                    Text("see all >", style: TextStyle(fontSize: 18)),
+                    TextButton(
+                      onPressed: null,
+                      child: Text("see all >", style: TextStyle(fontSize: 18))),
                   ],
                 ),
                 SingleChildScrollView(
