@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vitclubs/Home.dart';
+import 'package:vitclubs/Technical1.dart';
+import 'DescriptionPage.dart';
 
 void main() {
   runApp(const VitClubs());
