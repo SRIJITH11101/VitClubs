@@ -154,12 +154,13 @@ class Description extends StatelessWidget {
                             borderRadius: BorderRadius.circular(15),
                             border: Border.all(color: Colors.black26, width: 1),
                             gradient: const LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomLeft,
-                                colors: [
-                                  Colors.white,
-                                  Color.fromARGB(0, 168, 168, 168),
-                                ],),
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomLeft,
+                              colors: [
+                                Colors.white,
+                                Color.fromARGB(0, 168, 168, 168),
+                              ],
+                            ),
                           ),
                           child: const Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -191,12 +192,13 @@ class Description extends StatelessWidget {
                             border: Border.all(color: Colors.black26, width: 1),
                             borderRadius: BorderRadius.circular(15),
                             gradient: const LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomLeft,
-                                colors: [
-                                  Colors.white,
-                                  Color.fromARGB(0, 168, 168, 168),
-                                ],),
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomLeft,
+                              colors: [
+                                Colors.white,
+                                Color.fromARGB(0, 168, 168, 168),
+                              ],
+                            ),
                           ),
                           child: const Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -239,7 +241,9 @@ class Description extends StatelessWidget {
           ),
           IconButton(
             padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             icon:
                 const Icon(color: Colors.white, Icons.arrow_back_ios_new_sharp),
           ),
