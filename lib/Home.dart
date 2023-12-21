@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
     }
   }
 
-  void _Idxchanger(int value) {
+  Idxchanger(int value) {
     setState(() {
       _ChangeIdx = value;
       PageDecide();
@@ -443,10 +443,15 @@ class _HomeState extends State<Home> {
             ),
           ),
         ),
-        bottomNavigationBar: const Padding(
+        bottomNavigationBar: Padding(
           padding: EdgeInsets.only(left: 15, right: 15, bottom: 8),
           child: GNav(
-            padding: EdgeInsets.symmetric(vertical: 20),
+            onTabChange: (idx) {
+              Idxchanger(idx);
+            },
+            padding: EdgeInsets.all(20),
+
+            //padding: EdgeInsets.symmetric(vertical: 20),
             gap: 10,
             backgroundColor: Colors.black,
             color: Colors.grey,
