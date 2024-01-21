@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:vitclubs/Technical1.dart';
 
@@ -16,15 +17,18 @@ class _HomeState extends State<Home> {
   int _ChangeIdx = 0;
   PageDecide() {
     if (_ChangeIdx == 0) {
-      return Home();
-    } else if (_ChangeIdx == 1) {
+      return const Home();
+    }
+    if (_ChangeIdx == 1) {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => const Description()),
       );
-      return Description();
-    } else {
-      return Home();
+      return const Description();
+    }
+    if (_ChangeIdx == 2) {
+      FirebaseAuth.instance.signOut();
+      Navigator.pop(context);
     }
   }
 
@@ -39,6 +43,8 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          //leading: null,
+          automaticallyImplyLeading: false,
           title: const Center(
               child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -76,7 +82,7 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   "Whats new?..",
                   style: TextStyle(fontSize: 22),
                 ),
@@ -91,14 +97,14 @@ class _HomeState extends State<Home> {
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.grey,
                         ),
-                        child: Row(
+                        child: const Row(
                           children: <Widget>[
                             Image(image: AssetImage('images/new.jpg')),
                             Text('Hello everyone'),
                           ],
                         ),
                       ),
-                      SizedBox(width: 8.0),
+                      const SizedBox(width: 8.0),
                       Container(
                         height: 80,
                         width: 380,
@@ -106,7 +112,7 @@ class _HomeState extends State<Home> {
                           borderRadius: BorderRadius.circular(15),
                           color: Colors.grey,
                         ),
-                        child: Row(
+                        child: const Row(
                           children: <Widget>[
                             Image(image: AssetImage('images/new.jpg')),
                             Text('Hello everyone'),
@@ -117,20 +123,21 @@ class _HomeState extends State<Home> {
                   ),
                 ),
 
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Technical Clubs", style: TextStyle(fontSize: 22)),
+                    const Text("Technical Clubs",
+                        style: TextStyle(fontSize: 22)),
                     TextButton(
                         onPressed: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Technical()));
+                                  builder: (context) => const Technical()));
                         },
-                        child:
-                            Text("see all >", style: TextStyle(fontSize: 18))),
+                        child: const Text("see all >",
+                            style: TextStyle(fontSize: 18))),
                   ],
                 ),
 
@@ -143,7 +150,7 @@ class _HomeState extends State<Home> {
                         width: 192,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xFF4CFACF),
+                          color: const Color(0xFF4CFACF),
                         ),
                         child: const Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -166,13 +173,13 @@ class _HomeState extends State<Home> {
                               ),
                             ]),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Container(
                         height: 127,
                         width: 192,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xFF4CFACF),
+                          color: const Color(0xFF4CFACF),
                         ),
                         child: const Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -195,13 +202,13 @@ class _HomeState extends State<Home> {
                               ),
                             ]),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Container(
                         height: 127,
                         width: 192,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xFF4CFACF),
+                          color: const Color(0xFF4CFACF),
                         ),
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -227,8 +234,8 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
-                Row(
+                const SizedBox(height: 30),
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Non-Technical Clubs", style: TextStyle(fontSize: 22)),
@@ -247,7 +254,7 @@ class _HomeState extends State<Home> {
                         width: 192,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xFF4CFACF),
+                          color: const Color(0xFF4CFACF),
                         ),
                         child: const Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -272,13 +279,13 @@ class _HomeState extends State<Home> {
                               ),
                             ]),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Container(
                         height: 127,
                         width: 192,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xFF4CFACF),
+                          color: const Color(0xFF4CFACF),
                         ),
                         child: const Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -301,13 +308,13 @@ class _HomeState extends State<Home> {
                               ),
                             ]),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Container(
                         height: 127,
                         width: 192,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xFF4CFACF),
+                          color: const Color(0xFF4CFACF),
                         ),
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -333,8 +340,8 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
-                Row(
+                const SizedBox(height: 30),
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Regional Clubs", style: TextStyle(fontSize: 22)),
@@ -353,7 +360,7 @@ class _HomeState extends State<Home> {
                         width: 192,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xFF4CFACF),
+                          color: const Color(0xFF4CFACF),
                         ),
                         child: const Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -376,13 +383,13 @@ class _HomeState extends State<Home> {
                               ),
                             ]),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Container(
                         height: 127,
                         width: 192,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xFF4CFACF),
+                          color: const Color(0xFF4CFACF),
                         ),
                         child: const Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -405,13 +412,13 @@ class _HomeState extends State<Home> {
                               ),
                             ]),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Container(
                         height: 127,
                         width: 192,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
-                          color: Color(0xFF4CFACF),
+                          color: const Color(0xFF4CFACF),
                         ),
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -437,26 +444,26 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 //NavigationBarApp()
               ],
             ),
           ),
         ),
         bottomNavigationBar: Padding(
-          padding: EdgeInsets.only(left: 15, right: 15, bottom: 8),
+          padding: const EdgeInsets.only(left: 15, right: 15, bottom: 8),
           child: GNav(
             onTabChange: (idx) {
               Idxchanger(idx);
             },
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
 
             //padding: EdgeInsets.symmetric(vertical: 20),
             gap: 10,
             backgroundColor: Colors.black,
             color: Colors.grey,
             activeColor: Colors.white,
-            tabs: [
+            tabs: const [
               GButton(
                 icon: Icons.home_filled,
                 text: "Home",

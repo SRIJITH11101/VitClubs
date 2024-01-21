@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "838984084679",
+    "project_id": "vitclubs-ea408",
+    "storage_bucket": "vitclubs-ea408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838984084679:android:275b8f4a4bbbcab0c4e2e2",
+        "android_client_info": {
+          "package_name": "com.example.vitclubs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5pRhleGkyIhp0niXQhts1jzkf7xPCD0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

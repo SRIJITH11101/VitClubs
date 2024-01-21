@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:vitclubs/Home.dart';
-import 'package:vitclubs/Technical1.dart';
-import 'DescriptionPage.dart';
+import 'package:vitclubs/Login/Login.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:vitclubs/Login/Signup.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const VitClubs());
 }
 
@@ -12,10 +17,10 @@ class VitClubs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Home(),
+        body: Login(),
       ),
     );
   }

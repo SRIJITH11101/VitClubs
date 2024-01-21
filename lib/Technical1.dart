@@ -13,10 +13,10 @@ class _TechnicalState extends State<Technical> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(210, 233, 216, 244),
-          title: Center(
+          title: const Center(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -42,7 +42,7 @@ class _TechnicalState extends State<Technical> {
             Expanded(
               child: Container(
           child: Padding(
-            padding: EdgeInsets.only(left: 15, right: 10, top: 20),
+            padding: const EdgeInsets.only(left: 15, right: 10, top: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -52,9 +52,9 @@ class _TechnicalState extends State<Technical> {
                   width: 175,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Color.fromARGB(255, 230, 116, 28),
+                    color: const Color.fromARGB(255, 230, 116, 28),
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -80,7 +80,7 @@ class _TechnicalState extends State<Technical> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
@@ -88,9 +88,9 @@ class _TechnicalState extends State<Technical> {
                   width: 175,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Color.fromARGB(255, 230, 116, 28),
+                    color: const Color.fromARGB(255, 230, 116, 28),
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -116,7 +116,7 @@ class _TechnicalState extends State<Technical> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
@@ -124,9 +124,9 @@ class _TechnicalState extends State<Technical> {
                   width: 175,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Color.fromARGB(255, 230, 116, 28),
+                    color: const Color.fromARGB(255, 230, 116, 28),
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -152,7 +152,7 @@ class _TechnicalState extends State<Technical> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
@@ -160,9 +160,9 @@ class _TechnicalState extends State<Technical> {
                   width: 175,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Color.fromARGB(255, 230, 116, 28),
+                    color: const Color.fromARGB(255, 230, 116, 28),
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -193,12 +193,12 @@ class _TechnicalState extends State<Technical> {
           ),
         ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 0,
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.only(top:0),
+                padding: const EdgeInsets.only(top:0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   mainAxisSize: MainAxisSize.min,
@@ -208,9 +208,9 @@ class _TechnicalState extends State<Technical> {
                       width: 175,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Color.fromARGB(255, 97, 8, 156)
+                        color: const Color.fromARGB(255, 97, 8, 156)
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -235,7 +235,7 @@ class _TechnicalState extends State<Technical> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                   Container(
@@ -243,9 +243,9 @@ class _TechnicalState extends State<Technical> {
                       width: 175,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Color.fromARGB(255, 97, 8, 156)
+                        color: const Color.fromARGB(255, 97, 8, 156)
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -270,7 +270,7 @@ class _TechnicalState extends State<Technical> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Container(
@@ -278,9 +278,9 @@ class _TechnicalState extends State<Technical> {
                       width: 175,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Color.fromARGB(255, 97, 8, 156)
+                        color: const Color.fromARGB(255, 97, 8, 156)
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -305,7 +305,7 @@ class _TechnicalState extends State<Technical> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Container(
@@ -313,9 +313,9 @@ class _TechnicalState extends State<Technical> {
                       width: 175,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Color.fromARGB(255, 97, 8, 156)
+                        color: const Color.fromARGB(255, 97, 8, 156)
                       ),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: [
