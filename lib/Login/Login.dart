@@ -4,6 +4,7 @@ import 'package:vitclubs/Firebase_auth/firebase_auth_svs.dart';
 import 'package:vitclubs/Home.dart';
 import 'package:vitclubs/Login/FormContainerWidget.dart';
 import 'package:vitclubs/Login/Signup.dart';
+import 'package:vitclubs/Toast/toast.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -174,10 +175,10 @@ class _LoginState extends State<Login> {
       _SigningIn = false;
     });
     if (user != null) {
-      print("User successfully created");
+      showToast(message: "User successfully Loged in");
       Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
     } else {
-      print("Error signup");
+      showToast(message: "Login unsuccessful");
     }
   }
 }

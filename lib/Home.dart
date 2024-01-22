@@ -4,6 +4,7 @@ import 'package:vitclubs/Technical1.dart';
 
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:vitclubs/DescriptionPage.dart';
+import 'package:vitclubs/Toast/toast.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -29,6 +30,7 @@ class _HomeState extends State<Home> {
     if (_ChangeIdx == 2) {
       FirebaseAuth.instance.signOut();
       Navigator.pop(context);
+      showToast(message: "Successfully Logged out");
     }
   }
 
