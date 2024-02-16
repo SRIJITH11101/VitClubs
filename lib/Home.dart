@@ -7,18 +7,22 @@ import 'package:vitclubs/DescriptionPage.dart';
 import 'package:vitclubs/Toast/toast.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key});
+  final String name;
+  Home({Key? key, required this.name}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
+  //String dname=name;
+  //String sample = "hello";
+
   int idx = 0;
   int _ChangeIdx = 0;
   PageDecide() {
     if (_ChangeIdx == 0) {
-      return const Home();
+      return Home(name: widget.name);
     }
     if (_ChangeIdx == 1) {
       Navigator.push(
@@ -41,13 +45,14 @@ class _HomeState extends State<Home> {
     });
   }
 
+  // static const String sample = widget.name;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           //leading: null,
           automaticallyImplyLeading: false,
-          title: const Center(
+          title: Center(
               child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
@@ -55,13 +60,13 @@ class _HomeState extends State<Home> {
                 //mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Welcome,",
                     style: TextStyle(fontSize: 35.0),
                   ),
                   Text(
-                    "V V Saran",
-                    style: TextStyle(fontSize: 23.0),
+                    widget.name,
+                    style: TextStyle(fontSize: 25.0),
                   )
                 ],
               ),
@@ -73,7 +78,7 @@ class _HomeState extends State<Home> {
               )
             ],
           )),
-          backgroundColor: const Color.fromARGB(210, 233, 216, 244),
+          backgroundColor: Colors.white,
           toolbarHeight: 180.0,
         ),
         body: Padding(

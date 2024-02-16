@@ -12,7 +12,7 @@ class _TechnicalState extends State<Technical> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(210, 233, 216, 244),
+          backgroundColor: Colors.white,
           title: const Center(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -37,168 +37,164 @@ class _TechnicalState extends State<Technical> {
           toolbarHeight: 100,
         ),
         resizeToAvoidBottomInset: false,
-        body:Row(
+        body: Row(
           children: [
             Expanded(
               child: Container(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 15, right: 10, top: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Container(
-                  height: 150,
-                  width: 175,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: const Color.fromARGB(255, 230, 116, 28),
-                  ),
-                  child: const Column(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 15, right: 10, top: 20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      Padding(
-                        padding: EdgeInsets.only(top: 5),
-                        child: Image(
-                          image: AssetImage('images/Andriod.png'),
-                          
+                      Container(
+                        height: 150,
+                        width: 175,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: const Color.fromARGB(255, 230, 116, 28),
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 5),
+                              child: Image(
+                                image: AssetImage('images/Andriod.png'),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 5),
+                              child: Text(
+                                "ANDROID \nCLUB",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 23,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
+                          ],
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 5),
-                        child: Text(
-                          "ANDROID \nCLUB",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 23,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 175,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: const Color.fromARGB(255, 230, 116, 28),
                         ),
-                      )
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 5),
+                              child: Image(
+                                image: AssetImage('images/Andriod.png'),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 5),
+                              child: Text(
+                                "ANDROID \nCLUB",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 23,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 175,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: const Color.fromARGB(255, 230, 116, 28),
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 5),
+                              child: Image(
+                                image: AssetImage('images/Andriod.png'),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 5),
+                              child: Text(
+                                "ANDROID \nCLUB",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 23,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        height: 150,
+                        width: 175,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: const Color.fromARGB(255, 230, 116, 28),
+                        ),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 5),
+                              child: Image(
+                                image: AssetImage('images/Andriod.png'),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 5),
+                              child: Text(
+                                "ANDROID \nCLUB",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 23,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  height: 150,
-                  width: 175,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: const Color.fromARGB(255, 230, 116, 28),
-                  ),
-                  child: const Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(top: 5),
-                        child: Image(
-                          image: AssetImage('images/Andriod.png'),
-                          
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 5),
-                        child: Text(
-                          "ANDROID \nCLUB",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 23,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  height: 150,
-                  width: 175,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: const Color.fromARGB(255, 230, 116, 28),
-                  ),
-                  child: const Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(top: 5),
-                        child: Image(
-                          image: AssetImage('images/Andriod.png'),
-                          
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 5),
-                        child: Text(
-                          "ANDROID \nCLUB",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 23,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  height: 150,
-                  width: 175,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    color: const Color.fromARGB(255, 230, 116, 28),
-                  ),
-                  child: const Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(top: 5),
-                        child: Image(
-                          image: AssetImage('images/Andriod.png'),
-                          
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 5),
-                        child: Text(
-                          "ANDROID \nCLUB",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 23,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
+              ),
             ),
             const SizedBox(
               width: 0,
             ),
             Expanded(
               child: Container(
-                padding: const EdgeInsets.only(top:0),
+                padding: const EdgeInsets.only(top: 0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   mainAxisSize: MainAxisSize.min,
@@ -207,44 +203,8 @@ class _TechnicalState extends State<Technical> {
                       height: 150,
                       width: 175,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: const Color.fromARGB(255, 97, 8, 156)
-                      ),
-                      child: const Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(top: 5),
-                            child: Image(
-                              image: AssetImage('images/Andriod.png'),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 5),
-                            child: Text(
-                              "BLOCKCHAIN \nCLUB",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 23,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                  Container(
-                      height: 150,
-                      width: 175,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: const Color.fromARGB(255, 97, 8, 156)
-                      ),
+                          borderRadius: BorderRadius.circular(15),
+                          color: const Color.fromARGB(255, 97, 8, 156)),
                       child: const Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
@@ -277,9 +237,8 @@ class _TechnicalState extends State<Technical> {
                       height: 150,
                       width: 175,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: const Color.fromARGB(255, 97, 8, 156)
-                      ),
+                          borderRadius: BorderRadius.circular(15),
+                          color: const Color.fromARGB(255, 97, 8, 156)),
                       child: const Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
@@ -312,9 +271,42 @@ class _TechnicalState extends State<Technical> {
                       height: 150,
                       width: 175,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: const Color.fromARGB(255, 97, 8, 156)
+                          borderRadius: BorderRadius.circular(15),
+                          color: const Color.fromARGB(255, 97, 8, 156)),
+                      child: const Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(top: 5),
+                            child: Image(
+                              image: AssetImage('images/Andriod.png'),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(top: 5),
+                            child: Text(
+                              "BLOCKCHAIN \nCLUB",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 23,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          )
+                        ],
                       ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      height: 150,
+                      width: 175,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: const Color.fromARGB(255, 97, 8, 156)),
                       child: const Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
@@ -345,7 +337,6 @@ class _TechnicalState extends State<Technical> {
               ),
             )
           ],
-        ) 
-        );
+        ));
   }
 }

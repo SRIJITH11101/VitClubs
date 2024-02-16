@@ -37,7 +37,7 @@ class _LoginState extends State<Login> {
           children: <Widget>[
             Expanded(
               child: Container(
-                //height: 785,
+                height: MediaQuery.of(context).size.height,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('images/loginBG1.png'),
@@ -54,7 +54,7 @@ class _LoginState extends State<Login> {
                       height: 105,
                     ),
                     _Logindetails(),
-                    SizedBox(height: 67),
+                    //SizedBox(height: 67),
                   ],
                 ),
               ),
@@ -176,7 +176,12 @@ class _LoginState extends State<Login> {
     });
     if (user != null) {
       showToast(message: "User successfully Loged in");
-      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => Home(
+                    name: user.displayName ?? "Vitian",
+                  )));
     } else {
       showToast(message: "Login unsuccessful");
     }

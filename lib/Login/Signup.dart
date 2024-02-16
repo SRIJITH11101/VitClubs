@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:vitclubs/Firebase_auth/firebase_auth_svs.dart';
 import 'package:vitclubs/Home.dart';
 import 'package:vitclubs/Login/FormContainerWidget.dart';
@@ -40,7 +41,7 @@ class _signupState extends State<signup> {
           children: <Widget>[
             Expanded(
               child: Container(
-                //height: 785,
+                height: MediaQuery.of(context).size.height,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('images/loginBG1.png'),
@@ -57,7 +58,7 @@ class _signupState extends State<signup> {
                       height: 105,
                     ),
                     _SignUpdetails(context),
-                    SizedBox(height: 67),
+                    //SizedBox(height: 67),
                   ],
                 ),
               ),
@@ -142,17 +143,20 @@ class _signupState extends State<signup> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Already have an account?",
+                "Already have an account?  ",
                 style: TextStyle(fontSize: 15, color: Colors.black87),
               ),
               // SizedBox(width: 2),
-              TextButton(
-                onPressed: () {
+              GestureDetector(
+                onTap: () {
                   Navigator.pop(context);
                 },
                 child: Text(
                   'Login',
-                  style: TextStyle(fontSize: 15, color: Colors.black87),
+                  style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                      color: Color.fromARGB(221, 13, 103, 229)),
                 ),
               ),
             ],
@@ -170,13 +174,14 @@ class _signupState extends State<signup> {
     String email = _emailController.text;
     String password = _passwordController.text;
 
-    User? user = await _auth.signupEandP(email, password);
+    User? user = await _auth.signupEandP(email, password, username);
     setState(() {
       _SigningUp = false;
     });
     if (user != null) {
       showToast(message: "User successfully created");
-      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => Home(name: username)));
     } else {
       showToast(message: "SignUp unsuccessful");
     }

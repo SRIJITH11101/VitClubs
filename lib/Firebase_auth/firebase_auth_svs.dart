@@ -5,11 +5,16 @@ import 'package:vitclubs/Toast/toast.dart';
 class FirebaseAuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  Future<User?> signupEandP(String email, String password) async {
+  Future<User?> signupEandP(
+      String email, String password, String displayName) async {
     try {
       UserCredential credential = await _auth.createUserWithEmailAndPassword(
           email: email, password: password);
-      return credential.user;
+      User? user = credential.user;
+      if (user != null) {
+        await user.updateDisplayName(displayName);
+        return user;
+      }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'email-already-in-use') {
         showToast(message: 'The email is already in use');
